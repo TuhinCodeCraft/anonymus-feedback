@@ -5,7 +5,7 @@ export interface Message extends Document{ // In the end it will be a mongodb do
     createdAt: Date
 }
 
-// Schema<Message>
+// Schema<Message>: This is a generic type that tells mongoose that this schema is for the Message interface
 const MessageSchema: Schema<Message> = new Schema({
     content: {
         type: String,
